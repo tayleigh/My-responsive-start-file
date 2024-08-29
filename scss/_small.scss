@@ -1,0 +1,78 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+/*---- apply a natural box layout model to all elements -------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: $defaultFontFamily;
+  font-weight: $meduimWeight;
+  color: $fontColor;
+}
+
+#headerWrapper {
+  background-color: #abc;
+  color: $fontColor;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem $gutter;
+  gap: 8px;
+  h1 {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: $boldWeight;
+  }
+}
+#navwrapper {
+  background-color: #eceaea;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    li {
+      flex: 1;
+    }
+  }
+  li.active {
+    background-color: #609f6c;
+  }
+  a {
+    display: block;
+    padding: 0.75rem;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}
+
+// begin the footer
+
+#footerwrapper {
+  background-color: #abc;
+}
+footer {
+  padding: 0.5rem $gutter;
+  p{
+    margin: 0;
+    font-weight: $meduimWeight;
+    text-align:center;
+  }
+}
