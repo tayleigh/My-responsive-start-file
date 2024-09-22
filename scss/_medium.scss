@@ -4,3 +4,27 @@ header {
         font-size: 2.1rem;
     }
 }
+#headerWrapper header {
+    flex-wrap: nowrap;
+  }
+
+//main
+section {
+   
+    grid-template-columns: 1fr 1fr;
+  }
+
+/* NAVIGATION STUFF GOES HERE  */
+nav {
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        column-gap: $gutter;
+    }
+    ul li a {
+        margin: 10px 0;
+    }
+    ul li a:hover {
+        color: #f3ee97;
+    }
+}

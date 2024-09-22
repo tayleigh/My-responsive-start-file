@@ -21,8 +21,11 @@ body {
 }
 
 #headerWrapper {
-  background-color: #abc;
+  background-color: $secondaryColor;
   color: $fontColor;
+  
+  
+
 }
 
 header {
@@ -33,46 +36,94 @@ header {
   h1 {
     margin: 0;
     font-size: 1.7rem;
-    font-weight: $boldWeight;
-  }
-}
-#navwrapper {
-  background-color: #eceaea;
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    li {
-      flex: 1;
-    }
-  }
-  li.active {
-    background-color: #609f6c;
+    font-weight: 600;
   }
   a {
-    display: block;
-    padding: 0.75rem;
-    color: #000;
+    color: #ccc;
     text-decoration: none;
-    text-align: center;
+    margin: 0;
     
-    &:hover {
-      color: $primaryColor;
-    }
+  }
+  a:hover {
+    color:#9b9a9a;
+  }
+  
+}
+
+
+#navWrapper {
+  background-color: #275e38;
+}
+nav {
+  ul {
+    padding: 0;
+    margin: 0 $gutter;
+  }
+  ul li {
+    list-style-type: none;
+  }
+  ul li a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem $gutter;
+  }
+  ul li.active a {
+    background-color: #ffffffa5;
+    color: $primaryColor;
+    border-radius: 10px;
   }
 }
+
+//main stuff
+#mainwrapper {
+  margin: 10px;
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  
+}
+section div {
+  
+  border-radius: 5px;
+  margin: 1rem $gutter;
+  background-color: #275e38;
+ 
+ 
+  img {
+    width: 100%;
+    height: auto; 
+    border-radius: 5px;
+
+  }
+  h2{
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+
+  }
+ 
+
+  
+}
+
+
+
+
 
 // begin the footer
 
 #footerwrapper {
-  background-color: #abc;
+  background-color: $secondaryColor;
 }
 footer {
   padding: 0.5rem $gutter;
-  p{
+  p {
     margin: 0;
     font-weight: $meduimWeight;
-    text-align:center;
+    text-align: center;
   }
 }

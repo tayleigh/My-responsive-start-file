@@ -1,4 +1,17 @@
-header, nav, main, footer {
-    max-width: 60rem;
-    margin:auto;
+header, nav, main {
+    max-width: 960px;
+    margin: auto;
+    
 }
+
+/* NAVIGATION STUFF GOES HERE  */
+nav ul li a {
+    padding: .5 $gutter;
+   
+}
+
+//main
+section {
+   
+    grid-template-columns: 1fr 1fr;
+  }
