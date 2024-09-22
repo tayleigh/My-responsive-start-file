@@ -349,12 +349,12 @@ header h1 {
   font-weight: 600;
 }
 header a {
-  color: #ccc;
+  color: #777777;
   text-decoration: none;
   margin: 0;
 }
 header a:hover {
-  color: #9b9a9a;
+  color: #525252;
 }
 
 #navWrapper {
