@@ -453,7 +453,7 @@ footer p {
   }
   /* NAVIGATION STUFF GOES HERE  */
   nav ul li a {
-    padding: 0.5 16px;
+    padding: 0.5rem 16px;
   }
   section {
     grid-template-columns: 1fr 1fr;
